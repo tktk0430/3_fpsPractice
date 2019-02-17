@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 80px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin-top:0px;
+    margin-bottom: 20px;
+}
+
+header h1{
+    line-height: 80px;
+}
+
+
+.container{
+    text-align: center;
+    width: 1000px;
+}
+
+#playfield{
+    height: 400px;
+    width: 800px;
+    margin:0px auto 20px;
+    border: 1px solid black;
+    position: relative;
+}
+
+#target{
+    font-size: 35px;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    color: red;
+    position: absolute;
+    top:362px;
+    left: 762px;
+}
+
+.inner_target{
+    line-height: 35px;
+}
+
+#target:hover{
+    border: 0.1px solid red;
+    cursor: default;
+}
+.btn:focus, .btn:active{
+    outline: none !important;
+    box-shadow: none !important;
+}

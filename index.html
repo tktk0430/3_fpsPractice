@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>FPS PRACTICE MACHINE</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" integrity="sha384-PmY9l28YgO4JwMKbTvgaS7XNZJ30MK9FAZjjzXtlqyZCqBY6X6bXIkM++IkyinN+" crossorigin="anonymous">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap-theme.min.css" integrity="sha384-jzngWsPS6op3fgRCDTESqrEJwRKck+CILhJVO5VvaAZCq8JYf8HsR/HPpBOOPZfR" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>FPS PRACTICE MACHINE</h1>
+        </header>
+        <div class="container">
+            <div id="playfield">
+                <div id="target">
+                    <div class="inner_target">●</div>
+                </div>
+            </div>
+            <button type="button" id="start" class="btn btn-lg btn-primary">START</button>
+        </div>
+        <script>
+            var playfield = document.getElementById("playfield")
+
+            document.getElementById("target").addEventListener("click",function(){
+                playfield.innerHTML=""
+            })
+        </script>
+    </body>
+</html>

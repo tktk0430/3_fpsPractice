@@ -15,6 +15,7 @@
             <h1>FPS PRACTICE MACHINE</h1>
         </header>
         <div class="container">
+            <p id="timer">15.00</p>
             <div id="playfield">
                 <div id="target">
                     <div class="inner_target">●</div>
@@ -22,28 +23,8 @@
             </div>
             <button type="button" id="reset" class="btn btn-lg btn-danger">RESET</button>
             <div class="scoreboard">Score : <span id="score" class="scoreboard">0</span></div>
+            <div id="notice"></div>
         </div>
-        <script>
-            var playfield = document.getElementById("playfield");
-            var target= document.getElementById("target");
-            var score=document.getElementById("score");
-            var reset=document.getElementById("reset");
-            var count=0;
-            
-            target.addEventListener("click",function(){
-                randomTop=Math.floor(Math.random()*362);
-                randomLeft=Math.floor(Math.random()*762);
-                target.style.top=randomTop+"px";
-                target.style.left=randomLeft+"px";
-                count+=1;
-                score.innerHTML=count;
-            });
-
-            reset.addEventListener("click",function(){
-                score.innerHTML=0
-                target.style.top="182px";
-                target.style.left="382px";
-            })
-        </script>
+        <script type="text/javascript" src="main.js"></script>
     </body>
 </html>

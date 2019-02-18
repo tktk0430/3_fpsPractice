@@ -37,8 +37,8 @@ header h1{
     text-align: center;
     color: red;
     position: absolute;
-    top:362px;
-    left: 762px;
+    top:182px;
+    left: 382px;
 }
 
 .inner_target{
@@ -49,6 +49,12 @@ header h1{
     border: 0.1px solid red;
     cursor: default;
 }
+
+.scoreboard{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
 .btn:focus, .btn:active{
     outline: none !important;
     box-shadow: none !important;

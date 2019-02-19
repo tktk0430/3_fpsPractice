@@ -12,6 +12,8 @@ var nowTime;
 var timer_id;
 var topLimit=362;
 var leftLimit=762;
+var gunSound=new Audio("sound/gun1.mp3");
+var finishSound=new Audio("sound/gong-played2.mp3");
 
 
 target.addEventListener("click",function(){//First click = Game start
@@ -60,7 +62,7 @@ var goTimer=function(){
         timer.style.fontWeight="bold";
     }
     if (timePassed>15){
-        new Audio("sound/gong-played2.mp3").play();
+        finishSound.play();
         clearInterval(timer_id);
         timer.innerHTML="0.00";
         gameFinished=true;

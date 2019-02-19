@@ -16,6 +16,7 @@ var leftLimit=762;
 
 target.addEventListener("click",function(){//First click = Game start
     if (gameStart===false){
+        new Audio("sound/gun1.mp3").play();
         gameStart=true;
         startTime=new Date();
         timer_id=setInterval(goTimer,10);
@@ -26,6 +27,7 @@ target.addEventListener("click",function(){
     if (gameFinished){
         notice.innerHTML="Please put reset button."
     }else{
+        new Audio("sound/gun1.mp3").play();
         randomTop=Math.floor(Math.random()*topLimit);
         randomLeft=Math.floor(Math.random()*leftLimit);
         target.style.top=randomTop+"px";

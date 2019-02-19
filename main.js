@@ -60,6 +60,7 @@ var goTimer=function(){
         timer.style.fontWeight="bold";
     }
     if (timePassed>15){
+        new Audio("sound/gong-played2.mp3").play();
         clearInterval(timer_id);
         timer.innerHTML="0.00";
         gameFinished=true;
